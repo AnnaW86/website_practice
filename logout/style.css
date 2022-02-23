@@ -1,0 +1,40 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #EFEFEF;
+    margin: 0px;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 5px 15px;
+    background-color: #CAEBF2;
+}
+
+#homeIcon {
+    height: 25px;
+}
+
+.main {
+    text-align: center;
+    font-size: 36px;
+    padding-top: 100px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    width: 100%;
+    text-align: right;
+    justify-content: center;
+    background-color: #D9D9D9;
+}
+
+.nameInfo {
+    padding-right: 15px;
+}

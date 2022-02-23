@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+        </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="./index.html"><img src="images/home.svg" id="homeIcon"></a>
+        <div id="linksContainer">
+            <div id="dropdown">
+                <button id="dropbtn">Menu</button>
+                <div id="dropdownContent">
+                <a href="etch_a_sketch/index.html">Etch-a-sketch</a>
+                <a href="rock_paper_scissors/index.html">Rock Paper Scissors</a>
+                </div>
+            </div>
+            <a href="logout/index.html">Logout</a>
+        </div>
+
+    </div>
+
+    <div id="mainContainer">    
+        <p id="mainText">What would you like to play?</p>
+        <div id="gamesContainer">
+            <a href="etch_a_sketch/index.html">
+                <div class="gamesIndContainer">
+                    <img src="images/etch.jpeg" class="image">
+                    <p>Etch-a-sketch</p>
+                </div>
+            </a>
+            <a href="rock_paper_scissors/index.html">
+                <div class="gamesIndContainer">
+                    <img src="images/rock-paper-scissors.svg" class="image">
+                    <p>Rock Paper Scissors</p>
+                </div>
+            </a>
+        </div>
+    </div> 
+
+    <div class="footer">
+        <p class="nameInfo">A Stewart 2022</p>
+    </div>
+   
+
+
+<script src="script.js"></script>   
+</body>
+</html>
