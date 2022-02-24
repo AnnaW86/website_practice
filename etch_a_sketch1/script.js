@@ -1,6 +1,6 @@
 const container = document.querySelector('#container');
 const reset = document.querySelector('#reset');
-let cell //= document.getElementsByClassName("cell");
+let cell;
 let target;
 
 
@@ -48,18 +48,15 @@ window.location.reload();
 
 function userGrid() {
     rowNum = prompt("How big a grid would you like? Choose anything from 5 to 50:", "25");
-        if (rowNum>=5 && rowNum<=50 ) {
-            makeGrid(rowNum, rowNum);
-        }
-        else if (rowNum === null || rowNum === "")  {
-            makeGrid(25, 25);
-        }
-        else {
-            do {
+
+        while (rowNum<5 || rowNum>50 || /[a-zA-Z!@€£#$%^&*]/.test(rowNum) ) {
+                if (rowNum === null || rowNum === "" ) {
+                    rowNum = 25;
+                }
+                else {
                 rowNum = prompt('Try again, this time choose a whole number between 5 and 50.');
+                }
             }
-            while (rowNum<5 || rowNum>50 || Number.isInteger(rowNum));
             makeGrid(rowNum, rowNum);
         }
-}
 userGrid();
