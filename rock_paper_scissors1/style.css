@@ -111,8 +111,10 @@ a {
     display: flex;
     justify-content: center;
     gap: 35px;
+    height: 80px;
 }
 
-#results, #playAgain {
+#results {
     text-align: center;
+    height: 80px;
 }
